@@ -201,7 +201,7 @@ public class telamochila extends JFrame implements ActionListener, ItemListener 
         marcas.put(tipos[2], marcas2);
 		String[] marcas3 = {"Selecione","Travel Max","Swissland","Rafi"};
         marcas.put(tipos[3], marcas3);
-        String[] marcas4 = {"Selecione","Hannah Montana","Ben 10","Hello Kitty","Snoopy","Johnny Bravo","Elza","Dora a Aventureira"};
+        String[] marcas4 = {"Selecione","Hannah Montana","Ben 10","Hello Kitty","Snoopy","Johnny Bravo","Elza"};
         marcas.put(tipos[4], marcas4);
         String[] marcas5 = {"Selecione","Naruto","DragonBall","Digimon","Pokemon","Sonic","Yoda"};
         marcas.put(tipos[5], marcas5);
@@ -427,12 +427,6 @@ public class telamochila extends JFrame implements ActionListener, ItemListener 
 					imagem2.setIcon(new ImageIcon(IMAGES+"/imagens.java/yoda.jpg"));
 					imagem.setIcon(new ImageIcon(IMAGES+"/imagens.java/yoda.jpg"));
 				}
-				else if(item3.equals("Dora a Aventureira")) {
-					precomarca.setText(String.valueOf(9999.99));
-					imagem2.setIcon(new ImageIcon(IMAGES+"/imagens.java/dora.jpg"));
-					imagem.setIcon(new ImageIcon(IMAGES+"/imagens.java/dora.jpg"));
-				}
-				
 				v =(float) Float.parseFloat(precomarca.getText());
 				valorunitario2.setText(Float.toString(v));
 				totalunitario.setText(Float.toString(v));
